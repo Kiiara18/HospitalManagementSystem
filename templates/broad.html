@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<h1>USER INFORMATION</h1>
+{% for message in broad %}
+
+<br> FULLNAME : <br> {{ message.fullname }} <br>
+<br> USERNAME : <br> {{ message.username }} <br>
+<br> EMAIL ADDRESS : <br> {{ message.email }} <br>
+<br> PASSWORD : <br> {{ message.password }} <br>
+<br> AGE : <br> {{ message.age }} <br>
+<br> YEAROFBIRTH : <br> {{ message.yearofbirth }} <br>
+
+<hr>
+
+{% endfor %}
+
+</body>
+</html>
